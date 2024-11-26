@@ -10,11 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let difficulty = document.getElementById('difficulty');
     let correct = document.getElementById('correct');
     let incorrect = document.getElementById('incorrect');
+    let questionCategory = document.getElementById('category-selector');
+    let difficultySelector = document.getElementById('difficulty-selector');
+
+    // Variables
     let incorrectAnswers = [];
     let correctAnswer = '';
     let lastRequestTime = 0;
-    let questionCategory = document.getElementById('category-selector');
-    let difficultySelector = document.getElementById('difficulty-selector');
 
     // Event listeners
     start.addEventListener('click', generateQuestion);
